@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Elephant;
+  font-size: 62.5%;
+  color: #707070;
+}
+body {
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+nav {
+  position: fixed;
+  height: 6rem;
+  background-color: #E1E1E1;
+  width: 100%;
+  border-bottom: 2px solid #707070;
+  display: flex;
+  z-index: 99;
+}
+nav .logo {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+nav .logo a .image {
+  height: 7rem;
+  width: 7rem;
+}
+nav .logo a .image img {
+  width: 100%;
+}
+nav .logo h2 {
+  width: 40%;
+  padding-top: 0.4rem;
+}
+nav .links {
+  width: 20%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+nav .links a {
+  text-decoration: none;
+  color: #707070;
+  padding: 5px;
+  font-size: 2rem;
+}
+nav .links a:hover {
+  background-color: #DB2828;
+  color: #fff;
+  border-radius: 8px;
+}
+@media screen and (max-width: 800px) {
+  nav .links {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 30%;
+  }
+}
+.home {
+  min-height: 100vh;
+  width: 80%;
+  display: flex;
+  margin: auto;
+  padding-top: 7rem;
+}
+.home .homeLeft {
+  width: 50%;
+  margin: auto;
+  padding: 20px 0;
+}
+.home .homeLeft .homeTitle {
+  display: flex;
+  margin-bottom: 2rem;
+}
+.home .homeLeft .homeTitle h1 {
+  margin: auto;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #DB2828;
+}
+.home .homeLeft .homeText {
+  background-color: #E1E1E1;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+.home .homeLeft .bars {
+  display: flex;
+}
+.home .homeLeft .bars .bar {
+  margin: auto;
+  background-color: #707070;
+  width: 8px;
+  height: 30px;
+}
+.home .homeRight {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+.home .homeRight .image {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+.home .homeRight .image img {
+  width: 100%;
+  vertical-align: bottom;
+}
+@media screen and (max-width: 1100px) {
+  .home .homeLeft {
+    width: 100%;
+  }
+  .home .homeRight {
+    display: none;
+  }
+}
+.resume {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 7rem;
+  background-color: #DB2828;
+}
+.resume .resumeTitle {
+  margin: auto;
+  display: flex;
+  position: relative;
+  width: 20%;
+  padding-bottom: 40px;
+}
+.resume .resumeTitle .image {
+  position: absolute;
+  left: -20px;
+  top: -10px;
+  height: 7rem;
+  width: 7rem;
+}
+.resume .resumeTitle .image img {
+  width: 100%;
+}
+.resume .resumeTitle h1 {
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 1100px) {
+  .resume .resumeTitle {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .resume .resumeTitle {
+    width: 50%;
+  }
+}
+.resume .resumeContent {
+  margin: auto;
+  display: flex;
+  width: 90%;
+  font-size: 2rem;
+}
+.resume .resumeContent .resumeDiv {
+  width: 20%;
+  margin: auto;
+  padding-bottom: 70px;
+}
+.resume .resumeContent .resumeDiv .resumeStyle {
+  background-color: #fff;
+  padding: 30px 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 10px 10px 4px #707070;
+  border: 2px solid #707070;
+}
+@media screen and (max-width: 1100px) {
+  .resume .resumeContent .resumeDiv {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .resume .resumeContent {
+    flex-direction: column;
+  }
+  .resume .resumeContent .resumeDiv {
+    width: 60%;
+  }
+}
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 7rem;
+}
+.contact .contactTitle {
+  margin: auto;
+  display: flex;
+  position: relative;
+  width: 20%;
+  padding-bottom: 40px;
+}
+.contact .contactTitle .image {
+  position: absolute;
+  left: -20px;
+  top: -10px;
+  height: 7rem;
+  width: 7rem;
+}
+.contact .contactTitle .image img {
+  width: 100%;
+}
+.contact .contactTitle h1 {
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #DB2828;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 1100px) {
+  .contact .contactTitle {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact .contactTitle {
+    width: 50%;
+  }
+}
+.contact .contactContent {
+  margin: auto;
+  width: 95%;
+  font-size: 2rem;
+  position: relative;
+}
+.contact .contactContent .contactRow {
+  display: flex;
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.contact .contactContent .contactRow .contactDiv {
+  width: 100%;
+  padding: 0 40px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.contact .contactContent .contactRow .contactDiv .contactStyle {
+  margin: auto;
+  margin-bottom: 16px;
+  width: 80%;
+  background-color: #DB2828;
+  color: #fff;
+  padding: 20px 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 10px 10px 4px #707070;
+  border: 2px solid #707070;
+}
+@media screen and (max-width: 1300px) {
+  .contact .contactContent .contactRow .contactDiv .contactStyle {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact .contactContent .contactRow {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .contact .contactContent .contactRow {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contact .contactContent .george {
+  position: absolute;
+  right: 0px;
+  bottom: -25px;
+  width: 20%;
+  z-index: -1;
+}
+.contact .contactContent .george img {
+  width: 100%;
+  vertical-align: bottom;
+}
+/*# sourceMappingURL=styles.css.map */
